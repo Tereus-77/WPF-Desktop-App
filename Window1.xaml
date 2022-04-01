@@ -1,0 +1,35 @@
+﻿<Window x:Class="WpfApp.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp"
+        mc:Ignorable="d"
+        Title="Window" Height="443.5" Width="800">
+    <Grid x:Name="cancel">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="107*"/>
+            <ColumnDefinition Width="91*"/>
+        </Grid.ColumnDefinitions>
+        <Label Content="Please select the Primary Org Entity to Keep.  The remaining orgs&#xD;&#xA;will be merged into the primary." HorizontalAlignment="Left" Margin="156,26,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.026,0.045" Height="59" Width="496" FontSize="16" Grid.ColumnSpan="2"/>
+        <DataGrid HorizontalAlignment="Left" Height="234" Margin="42,102,0,0" Name="subGridData" VerticalAlignment="Top" Width="710" Grid.ColumnSpan="2" AutoGenerateColumns = "False">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Org Name" Binding="{Binding OrgName}" MinWidth="150"/>
+                <DataGridTextColumn Header="Address 1" Binding="{Binding Address1}" MinWidth="200"/>
+                <DataGridTextColumn Header="City" Binding="{Binding City}" MinWidth="150"/>
+                <DataGridTextColumn Header="State" Binding="{Binding State}" MinWidth="100"/>
+                <DataGridTextColumn Header="Zip" Binding="{Binding Zip}" MinWidth="50"/>
+                <DataGridCheckBoxColumn Header="Primary" Binding="{Binding Primary, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"  IsThreeState="FALSE">
+                    <DataGridCheckBoxColumn.CellStyle>
+                        <Style>
+                            <EventSetter Event="CheckBox.Checked" Handler="OnCheckedPrimary"/>
+                        </Style>
+                    </DataGridCheckBoxColumn.CellStyle>
+                </DataGridCheckBoxColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button x:Name="Merge" Content="Merge Entities" Grid.Column="1" HorizontalAlignment="Left" Margin="215,361,0,0" VerticalAlignment="Top" Width="102" Height="28" FontSize="13" Click="Merge_Click"/>
+        <Button x:Name="cancel1" Content="Cancel" Grid.Column="1" HorizontalAlignment="Left" Margin="68,361,0,0" VerticalAlignment="Top" Width="103" Height="28" Click="Button_Click"/>
+
+    </Grid>
+</Window>

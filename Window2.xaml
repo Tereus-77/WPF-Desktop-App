@@ -1,0 +1,61 @@
+﻿<Window x:Class="WpfApp.Window2"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp"
+        mc:Ignorable="d"
+        Title="Detail" Height="745.224" Width="800">
+    <Grid>
+        <Label Content="Organization Name :" HorizontalAlignment="Left" Margin="102,47,0,0" VerticalAlignment="Top" Width="128"/>
+        <TextBox Name="name" IsReadOnly="True" HorizontalAlignment="Left" Height="23" Margin="234,50,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="317"/>
+        <Label Content="Org Type :" HorizontalAlignment="Left" Margin="157,78,0,0" VerticalAlignment="Top" Width="68"/>
+        <TextBox Name="orgtype" IsReadOnly="True" HorizontalAlignment="Left" Height="23" Margin="234,81,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="169"/>
+        <Label Content="Sub Type :" HorizontalAlignment="Left" Margin="428,81,0,0" VerticalAlignment="Top" Width="80"/>
+        <TextBox Name="subtype" IsReadOnly="True" HorizontalAlignment="Left" Height="23" Margin="508,82,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="164"/>
+        <Label Content="Enter Zip Code :" HorizontalAlignment="Left" Margin="127,109,0,0" VerticalAlignment="Top" Width="94"/>
+        <TextBox Name="zip" IsReadOnly="True" HorizontalAlignment="Left" Height="23" Margin="234,113,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="80"/>
+        <Label Content="Address 1 :" HorizontalAlignment="Left" Margin="153,137,0,0" VerticalAlignment="Top" Width="73"/>
+        <TextBox Name="address1" IsReadOnly="True" HorizontalAlignment="Left" Height="23" Margin="234,141,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="223"/>
+        <Label Content="Address 2 :" HorizontalAlignment="Left" Margin="153,166,0,0" VerticalAlignment="Top" Width="73"/>
+        <TextBox Name="address2" IsReadOnly="True" HorizontalAlignment="Left" Height="23" Margin="234,170,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="223"/>
+        <Label Content="TIN :" HorizontalAlignment="Left" Margin="491,137,0,0" VerticalAlignment="Top" Width="41"/>
+        <TextBox Name="tin" IsReadOnly="True" HorizontalAlignment="Left" Height="23" Margin="533,141,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="149"/>
+        <Label Content="NPI :" HorizontalAlignment="Left" Margin="491,166,0,0" VerticalAlignment="Top" Width="41"/>
+        <TextBox Name="npi" IsReadOnly="True" HorizontalAlignment="Left" Height="23" Margin="533,170,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="149"/>
+        <Label Content="City :" HorizontalAlignment="Left" Margin="184,193,0,0" VerticalAlignment="Top" Width="44"/>
+        <TextBox Name="city" IsReadOnly="True" HorizontalAlignment="Left" Height="23" Margin="234,198,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="168"/>
+        <Label Content="ST :" HorizontalAlignment="Left" Margin="429,195,0,0" VerticalAlignment="Top" Width="41"/>
+        <TextBox Name="st" IsReadOnly="True" HorizontalAlignment="Left" Height="23" Margin="471,198,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="61"/>
+        <Label Content="County :" HorizontalAlignment="Left" Margin="167,219,0,0" VerticalAlignment="Top" Width="55"/>
+        <TextBox Name="county" IsReadOnly="True" HorizontalAlignment="Left" Height="23" Margin="234,224,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="168"/>
+        <Label Content="Phone # :" HorizontalAlignment="Left" Margin="160,245,0,0" VerticalAlignment="Top" Width="61"/>
+        <TextBox Name="phone" IsReadOnly="True" HorizontalAlignment="Left" Height="23" Margin="234,250,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="146"/>
+        <Label Content="Fax # :" HorizontalAlignment="Left" Margin="178,271,0,0" VerticalAlignment="Top" Width="43"/>
+        <TextBox Name="fax" IsReadOnly="True" HorizontalAlignment="Left" Height="23" Margin="234,276,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="146"/>
+        <Label Content="Ext :" HorizontalAlignment="Left" Margin="428,245,0,0" VerticalAlignment="Top" Width="41"/>
+        <TextBox Name="ext" IsReadOnly="True" HorizontalAlignment="Left" Height="23" Margin="470,250,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="146"/>
+        <Label Content="Beeper # :" HorizontalAlignment="Left" Margin="158,297,0,0" VerticalAlignment="Top" Width="68"/>
+        <TextBox Name="beeper" IsReadOnly="True" HorizontalAlignment="Left" Height="23" Margin="234,302,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="146"/>
+        <Label Content="Active :" HorizontalAlignment="Left" Margin="412,297,0,0" VerticalAlignment="Top" Width="51"/>
+        <CheckBox Name="active"  Content="" HorizontalAlignment="Left" Margin="470,304,0,0" VerticalAlignment="Top"/>
+        <Label Content="Title :" HorizontalAlignment="Left" Margin="184,349,0,0" VerticalAlignment="Top" Width="42"/>
+        <TextBox Name="title" IsReadOnly="True" HorizontalAlignment="Left" Height="23" Margin="234,354,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="298"/>
+        <Label Content="Prefix :" HorizontalAlignment="Left" Margin="562,349,0,0" VerticalAlignment="Top" Width="54"/>
+        <TextBox Name="contactprefix" IsReadOnly="True" HorizontalAlignment="Left" Height="23" Margin="621,354,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="80" RenderTransformOrigin="0.086,0.659"/>
+        <Label Content="First Name :" HorizontalAlignment="Left" Margin="149,379,0,0" VerticalAlignment="Top" Width="73"/>
+        <TextBox Name="contactfirstname" IsReadOnly="True" HorizontalAlignment="Left" Height="23" Margin="234,384,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="197"/>
+        <Label Content="Last Name :" HorizontalAlignment="Left" Margin="149,410,0,0" VerticalAlignment="Top" Width="73"/>
+        <TextBox Name="contactlastname" IsReadOnly="True" HorizontalAlignment="Left" Height="23" Margin="234,415,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="197"/>
+        <Label Content="Phone # :"  HorizontalAlignment="Left" Margin="161,442,0,0" VerticalAlignment="Top" Width="72"/>
+        <TextBox Name="contactphone" IsReadOnly="True" HorizontalAlignment="Left" Height="23" Margin="234,447,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="146"/>
+        <Label Content="Ext :" HorizontalAlignment="Left" Margin="421,442,0,0" VerticalAlignment="Top" Width="36"/>
+        <TextBox Name="contactext" IsReadOnly="True" HorizontalAlignment="Left" Height="23" Margin="465,447,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="146"/>
+        <Label Content="Email Address :" HorizontalAlignment="Left" Margin="133,476,0,0" VerticalAlignment="Top" Width="89"/>
+        <TextBox Name="contactemail"  IsReadOnly="True" HorizontalAlignment="Left" Height="23" Margin="234,481,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="426"/>
+        <Label Content="Notes :" HorizontalAlignment="Left" Margin="175,506,0,0" VerticalAlignment="Top" Width="48"/>
+        <TextBox Name="contactnotes" IsReadOnly="True" HorizontalAlignment="Left" Height="163" Margin="234,511,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="426"/>
+        <GroupBox Header="" HorizontalAlignment="Left" Height="316" Margin="67,15,0,0" VerticalAlignment="Top" Width="651"/>
+        <GroupBox Header="" HorizontalAlignment="Left" Height="349" Margin="67,336,0,0" VerticalAlignment="Top" Width="651"/>
+    </Grid>
+</Window>
